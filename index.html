@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БАРАХОЛКА</title>
+    <link rel="stylesheet" href="saitik.css">
+</head>
+<body>
+    <header>
+        <h1>БАРАХОЛКА</h1>
+        <button id="themeToggle">Сменить дизайн</button>
+    </header>
+    <div class="content"></div>
+    <!-- Добавленная секция с тремя кнопками -->
+        <h2>Нумерация кнопок</h2>
+    <section id="list-container">
+        <ul id="itemList">
+            <li>Элемент 1</li>
+            <li>Элемент 2</li>
+            <li>Элемент 3</li>
+        </ul>
+        <button id="addItemButton">Добавить элемент</button>
+        <button id="removeFirstItemButton">Удалить первый элемент</button>
+        <button id="clickClassButton">Добавить класс "click"</button>
+    </section>
+    <section id="buttons">
+        <button class="number-button">1</button>
+        <button class="number-button">2</button>
+        <button class="number-button">3</button>
+        <button id="countButton">4</button>
+        <button id="textChangeButton">5</button>
+        <button id="addTitleButton">Добавить заголовок</button>
+        <button id="removeTitleButton">Удалить заголовок</button>
+        <button id="hoverButton">Наведи на меня</button>
+    </section>
+    <main>
+        <section id="catalog">
+            <h2>Ассортимент продукции</h2>
+            <form id="filter-form">
+                <label for="min-price">Минимальная цена:</label>
+                <input type="number" id="min-price" placeholder="Любая">
+                
+                <label for="max-price">Максимальная цена:</label>
+                <input type="number" id="max-price" placeholder="Любая">
+                
+                <button type="submit">Фильтровать</button>
+            </form>
+
+            <div id="products-list"></div>
+        </section>
+        <section id="agreement-section">
+    <form id="agreement-form">
+        <label>
+            <input type="checkbox" id="agree-checkbox">
+            Согласен с условиями
+        </label>
+        <p id="agreement-error" class="error-message"></p>
+        <button type="button" id="submit-agreement">Отправить</button>
+    </form>
+</section>  
+        <section id="drink-selection">
+    <h2>Выберите напиток:</h2>
+    <form id="drink-form">
+        <label>
+            <input type="radio" name="drink" value="tea"> Чай
+        </label>
+        <label>
+            <input type="radio" name="drink" value="coffee"> Кофе
+        </label>
+        <button type="button" id="submit-drink">Отправить</button>
+    </form>
+</section>
+<section id="password-section">
+    <h2>Проверка пароля</h2>
+    <div class="password-container">
+        <input type="password" id="password-input" placeholder="Введите пароль">
+        <button id="check-password">Проверить</button>
+    </div>
+    <p id="password-message"></p>
+</section>
+<section id="dynamic-title-section">
+    <h1 id="dynamic-heading">Заголовок</h1>
+    <input 
+        type="text" 
+        id="title-input" 
+        placeholder="Введите текст для заголовка"
+    >
+</section>
+<section id="dynamic-content">
+    <div class="input-group">
+        <input type="text" id="from" placeholder="Введите текст">
+        <span id="output"></span>
+    </div>
+
+    <div>
+        <button class="messageBtn">Анимировать сообщение</button>
+        <div class="message">Это сообщение появится с анимацией</div>
+    </div>
+
+    <form id="validationForm">
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+        <button type="submit">Отправить</button>
+    </form>
+</section>
+    </main>
+    <footer>
+        <p>© 2025 БАРАХОЛКА</p>
+    </footer>
+
+    <script src="saitik.js"></script>
+</body>
+</html>
