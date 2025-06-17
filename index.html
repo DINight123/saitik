@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="saitik.css">
+</head>
+<body>
+ <form id="passwordForm">
+  <label for="password">Пароль:</label>
+  <input type="password" id="password" name="password">
+  <div id="errorMessage"></div>
+  <button type="submit">Отправить</button>
+</form>
+ <form id="myForm">
+  <div>
+    <label>
+      <input type="checkbox" id="agreementCheckbox" name="agreement"> Согласен с условиями
+    </label>
+    <div id="errorContainer"></div>
+  </div>
+
+  <label for="name">Имя:</label>
+  <input type="text" id="name" name="name"><br><br>
+
+  <button type="submit" id="submitButton">Отправить</button>
+</form>
+<form id="beverageForm">
+<div>
+<label>
+<input type="radio" id="tea" name="beverage" value="tea"> Чай
+</label>
+</div>
+<div>
+<label>
+<input type="radio" id="coffee" name="beverage" value="coffee"> Кофе
+</label>
+</div>
+<button type="submit">Отправить</button>
+</form>
+<h1>Магазин продуктов</h1>
+<div class="store-container" id="productsContainer"></div>
+<div class="cart" id="cartSection">
+<h2>Корзина</h2>
+<ul class="cart-items" id="cartItems"></ul>
+<div class="total" id="totalPrice">Итого: 0 ₽</div>
+<button class="clear-cart" id="clearCartBtn">Очистить корзину</button>
+</div>
+<script src="saitik.js"></script>
+</body>
+</html>
