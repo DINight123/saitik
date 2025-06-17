@@ -7,13 +7,13 @@
 body {
  font-family: Arial, sans-serif;
  background-color: #f7f7f7;
- color: #333;
+ color: #00ffff;
  line-height: 1.6;
  transition: background-color 0.5s, color 0.5s;
 }
 
 header {
- background-color: #0073ff;
+ background-color: #800080;
  color: rgba(252, 0, 0, 0.539);
  padding: 1em;
  text-align: center;
