@@ -102,10 +102,10 @@ themeToggleButton.addEventListener('click', () => {
 
   if (darkMode) {
       document.body.style.backgroundColor = '#222';
-      document.body.style.color = '#fff';
+      document.body.style.color = '#6A5ACD';
   } else {
       document.body.style.backgroundColor = '#fff';
-      document.body.style.color = '#000';
+      document.body.style.color = '#8B734B';
   }
 });
 
