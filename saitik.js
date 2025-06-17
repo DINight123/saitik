@@ -1,62 +1,62 @@
 const products = [
   {
       name: 'Компуктер',
-      description: 'Intel Core i7, 16GB RAM, SSD 512GB',
-      price: 99990,
+      description: 'Intel Pentium, 2gb RAM, SSD 1TB',
+      price: 1200,
       imageUrl: 'https://freepngimg.com/download/technology/51761-3-desktop-computer-hd-image-free-png.png'
   },
   {
       name: 'Монитор ',
       description: 'IPS-матрица, частота 240Гц',
-      price: 39990,
+      price: 700,
       imageUrl: 'https://avatars.mds.yandex.net/i?id=b42eee771d0e3935a11dee445b7f6e84_l-5327796-images-thumbs&n=13'
   },
   {
       name: 'Клавиатура',
       description: 'Механические переключатели Cherry MX Speed Silver',
-      price: 19990,
+      price: 1900,
       imageUrl: 'https://starkom.ru/wa-data/public/shop/products/21/36/73621/images/13997/13997.970.JPG'
   },
   {
       name: 'Геймпады',
       description: 'Беспроводное подключение, настраиваемые триггеры',
-      price: 14990,
+      price: 1100,
       imageUrl: 'https://avatars.mds.yandex.net/i?id=193175cfdb84efbcaf01e05f455bd56f_l-11459613-images-thumbs&n=13'
   },
   {
       name: 'SSD ',
       description: 'NVMe PCIe Gen4, объем 1TB',
-      price: 12990,
+      price: 2500,
       imageUrl: 'https://avatars.mds.yandex.net/i?id=5c6b15b6e416c66fdd603ed01d2217b1_l-12373036-images-thumbs&n=13'
   },
   {
       name: 'Рюкзак для ноутбука ',
       description: 'Материал Cordura, влагозащита',
-      price: 11990,
+      price: 1000,
       imageUrl: 'https://i.pinimg.com/originals/87/38/64/873864f0e6c6b8fe232125f4e8c4be73.jpg'
   },
   {
       name: ' GT 210',
       description: 'Архитектура Ampere, объем VRAM 12ГБ',
-      price: 149990,
+      price: 2000,
       imageUrl: 'https://www.amtgov.com/cdn/shop/products/evga.jpg2_1200x1200.jpg'
   },
   {
       name: 'Настольная лампа ',
       description: 'Управление светом через приложение',
-      price: 4990,
+      price: 200,
       imageUrl: 'https://yandex-images.clstorage.net/nL5N01s90/3899c9co1d/vh1-lVkKbCLOfnP2F6sMlmt91l9E_lRJqKGcKFmi2djYNkT-XsO6cWv9whBdeRpMwx0igIt8pFWb6HxVGyvLGP9Zco1AUjQpynpmqla0AYIaW_ZwYsRjNY-DoUlHpsOR0D4D7wSo02AtprZmGlg6WeU3PvvAOP0X5LIcCkVbnmO2IAncMyxiEMN4cM1ekyarNE7HVW3TZiCsi6d3Wo3UsP0QScUDv_8vJKqWcCBoI079MifD3iTSEf-bMDJMarxengkc0QMmYBXUbEDQbbAEiTZt-lZoyXkJlIeMUWay9JbDHEfTCYXhIySjvl4QcyFlyzkQ6-cB0DjEpysPVXC9fJs5F-o5CG8B2Wd3wEqzL6s2fNt0WdduM4GWrk90ltS0zQJbzD2n3RoPpZ5eEH4ic-8hP-H5HNkt57QgN019tn-nJhHfNzJuIP1ZR91Ngim9IEHOZ0PvWQyht6thR6Tmr_Q_W8QBv8oqK6O8Tz58PG3oEQfc8BDDKu2DJwBXfYhHgjsIyA8BTzHVd0DRf4UkiQdI0nBl_38hgqONV2614J_aH0vnPK_qJzG9j2omXCB6yAQ12_0_-QzOgxssSlS8ZIsLLc8xEVEs2XJP816tD60MUuBgd-1fIJCGu0Jpqdqf2jNY1xKc7xo2kZZtM38uU_ktFPX4I-Mo_5gdF3ZVqkCBLxP5JCZ8EelNT-dQgjqmKWD5UFn3QC2WtKVTV7bUudMWaMg8jsgpObmxbwRZDVvYHCLX-i32BuyFIzFkSYBeugYc9iwgcQrATULIYZELqS1-31Bs9k8_tKKeZFmAyZf9E0X8J6PJIQibsFIqczlCzjkOx_Qp2SLTuAADXHu7UYErL845MWsG7HZg6XCQIb8ST_BjUcJbIrOyh0h_vsK07yJq6BO8_BQwpoJLG189XPg_J-nUJ_4P2Z0DMUtdi226FyHDNzF8JN5VdsR_tx63BkPvR2LQTw-xjK9RaYU'
   },
   {
       name: 'Проектор ',
       description: 'Разрешение Full HD, яркость 3200 люменов',
-      price: 69990,
+      price: 10000,
       imageUrl: 'https://yandex-images.clstorage.net/l96QMU435/bfa68eFB/j7Z-doIL_CoOCxP8U4T6sbiPSL3Tux788_dF0pbiCMKK6Lc2T8YoUDRcAzAds5ZIBPrzrKwCXkdBDPKqHHhBYCqSC-LHX7nOfgtCuOMgOxF5jhx8B4pK3WO3MEJWVJtV_X_BsSnxzwezjfZQuGbH6XXrsG89h81V9ysXj427pDVe1DwWkZj-Tg57kmnhBjlQaj3ungNY611klacHM6Ubx29PUAOL8g0lY7w10gi0FR4E-WCtmSUvJ4arF82P65QUTJXcJuD6j0_c-EPZoqRpQLj83R_xitguVZR1hdNH6Na-LSCwqlPtxQJuhTKo1-bPZjlhjrnl3Cdm-gVuD2plBdwnb0bQe7-u36hQi8J1uCO6r0zeQqiKbrSFNAdQBhr1Hm0BMuhwbGYg_pZjOoRGf_RoMPwL969WdvkUT365x_UuBf_24CrPfB3Jcaohtiiiap5N3kL4KhzHRHQGAje5xS99gVF7czwVsF7Uo8t1Nc8U-jN_yhceF4Z5hl4OCja0XuZOVZEYLf6uSQHrkXRrQxgdjI2xish9F6RV5RLm6lR-7mLjGgD_53P_NBI6tkb9NJhhrJnXfaeUS6QcromkJ7_l3yWyWH_PjEhTmuDmmGMYrp0uc2o5LOV1tDfD9evF3h2hMfmRjiUzXPcQSgQ0vOZbcw2LVH6ntnpGPe64xPbfRY42YChtDI7K8VpSRFlxCow9PYJ4GS0HROVVcnY4BW2PM0N6Yd01Qk8UsDiFBO41mtL8auRvZea5Bp3tKud1jVVvdZDZzg_-m0L54nWKIXgNzq2CqmsORJanF4MmS8TvXVMAyUL-drNfFNMbNlUOtehhTFnX3HZUGwRufSj2Jd0lvLUAyF2enDkQOxLV2iM6Ddwdgoq7rcckRBfRFbpETZ_TYxmiH2dD3jaByNYEnodoUh4rRx7ENtsHLG4aVpQv1G1UkOmvj59b01oA9AtQ6Y_uj7O7CJ9E9OaFMYYZk'
   },
   {
       name: 'Микрофон ',
       description: 'Четкий звук, удобное управление',
-      price: 12990,
+      price: 1000,
       imageUrl: 'https://avatars.mds.yandex.net/i?id=f52f09d51e18e1f3a51919c63b897e09_l-9701523-images-thumbs&n=13'
   }
 ];
