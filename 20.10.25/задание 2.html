@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>задание 2</title>
+    <style>
+        /* Базовая стилизация элементов */
+        
+        .box {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        button {
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container"></div>
+
+    <button onclick="addBox()">Добавить элемент</button>
+    <button onclick="removeLastBox()">Удалить элемент</button>
+    <button onclick="cloneLastBox()">Клонировать элемент</button>
+
+    <script>
+        let boxCount = 0; // счётчик количества созданных элементов
+
+        // Функция добавления нового элемента
+        function addBox() {
+            boxCount++;
+            let newDiv = document.createElement('div');
+            newDiv.className = 'box'; // добавляем класс .box
+            newDiv.textContent = boxCount.toString(); // содержимое текста - порядковый номер
+            document.getElementById('container').appendChild(newDiv); // добавляем элемент на страницу
+        }
+
+        // Функция удаления последнего элемента
+        function removeLastBox() {
+            let boxes = document.querySelectorAll('.box'); // получаем список всех элементов
+            if (boxes.length === 0) return; // ничего удалять, если нет элементов
+            boxes[boxes.length - 1].remove(); // удаляем последний элемент
+            boxCount--; // уменьшаем количество существующих элементов
+        }
+
+        // Функция клонирования последнего элемента
+        function cloneLastBox() {
+            let boxes = document.querySelectorAll('.box'); // получаем список всех элементов
+            if (boxes.length === 0) return; // нечего клонировать, если нет элементов
+            let lastBox = boxes[boxes.length - 1]; // выбираем последний элемент
+            let clonedBox = lastBox.cloneNode(true); // создаём копию
+            document.getElementById('container').appendChild(clonedBox); // добавляем копию на страницу
+            boxCount++; // увеличиваем счётчик новых элементов
+        }
+    </script>
+
+</body>
+
+</html>

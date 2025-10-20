@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Задача 1: Определение размеров окна браузера</h2>
+    <p id="windowSize"></p>
+
+    <h2>Задача 2: Подтверждение закрытия страницы</h2>
+    <!-- Это действие автоматически обработается браузером -->
+
+    <h2>Задача 3: Управление историей переходов</h2>
+    <button onclick="goBack()">Назад</button>
+    <button onclick="goForward()">Вперед</button>
+
+    <script>
+        // Задача 1: Отображение текущих размеров окна браузера
+        window.addEventListener('resize', updateWindowSize);
+        updateWindowSize();
+
+        function updateWindowSize() {
+            const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+            document.getElementById("windowSize").innerText = `Ширина окна: ${width}, Высота окна: ${height}`;
+        }
+
+        // Задача 2: Подтверждение перед закрытием страницы
+        window.onbeforeunload = function(event) {
+            return 'Вы уверены, что хотите покинуть страницу?';
+        };
+
+        // Задача 3: Управление историей переходов
+        function goBack() {
+            if (history.length > 1) { // Проверяем наличие записей в истории
+                history.back(); // Переходим назад
+            } else {
+                alert('Нет предыдущих страниц.');
+            }
+        }
+
+        function goForward() {
+            if (history.forward()) { // Переходим вперед
+                history.forward();
+            } else {
+                alert('Нет последующих страниц.');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
